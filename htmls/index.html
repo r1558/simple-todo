@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list in html and css</title>
+    <style> 
+    body{
+        background-image: linear-gradient(to bottom right, #ff9101,rgb(255, 0, 43));
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation-name: example;
+    }
+    @keyframes example {
+  from { background-image: linear-gradient(to bottom right, #ff9101,rgb(255, 0, 43));}
+  to { background-image: linear-gradient(to bottom right, rgb(255, 0, 43),#ff9101);}
+}
+    .completed{
+        text-decoration: line-through;
+        color: #eeeeee;
+        width: 200px;
+        border-radius: 3px;
+        transition: all 2s;
+        height: align-self: start;;
+        background-color: #212121;
+        font-style: italic;
+
+    }
+    .completed:hover{
+        color:#212121;
+        background-color:transparent;
+        border-radius: 8px;
+        box-shadow: #272727;
+        border: #212121 solid 1px;
+        transition: all 2s;
+    }
+    input[type="text"]:on-click{
+          border: none;
+    }
+    #container{
+       width: 33vw;
+       margin: 4rem auto;
+    }
+    input[type="text"]{
+        height: 50px;
+        color: white;
+        width: 100%;
+        background-color: #212121;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: auto;
+        transition: all 2s;
+    }
+    input[type="text"]:hover{
+        height: 50px;
+        background-color: #e4e4e4;
+        border: #e4e4e4;
+        color:black;
+        transition-property: all 2s;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+    }
+    li{
+        list-style: none;
+        font-size: 20px;
+    }
+    input[type=checkbox]{
+        zoom: 1;
+    }
+    ul{
+        padding: 10px;
+        margin: auto;
+        width: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="addtodo" placeholder="enter the thing"/> 
+         <ul id="todoelements">
+         </ul>
+
+    </div>
+     <script src="index.js"> </script>
+</body>
+</html>
