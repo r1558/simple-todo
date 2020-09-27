@@ -7,7 +7,7 @@ $addtodo.addEventListener('keypress',(e) =>{
          var todoitem = document.createElement('li');
          var todoid= new Date().getTime();
          todoitem.innerHTML = `
-         <input type="checkbox" id="${todoid}" />
+         <input type="radio" id="${todoid}" />
          <label for="${todoid}">${todovalue}</label>
          `;
          console.log(todoitem);
